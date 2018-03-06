@@ -7,7 +7,7 @@ var spawn = require('child_process').spawn;
 var node = require('./../variables.js');
 var test = 0;
 
-// Account info for password "sebastian"  - 0 EBOOKCOIN amount
+// Account info for password "sebastian"  - 0 PLTCHAINCOIN Amount
 var Saccount = {
     'address' : '12099044743111170367C',
     'publicKey' : 'fbd20d4975e53916488791477dd38274c1b4ec23ad322a65adb171ec2ab6a0dc',

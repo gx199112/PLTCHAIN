@@ -3,7 +3,7 @@
 // Requires and node configuration
 var node = require('./../variables.js');
 
-// Account info for a RANDOM account (which we create later) - 0 EBOOKCOIN amount | Will act as delegate
+// Account info for a RANDOM account (which we create later) - 0 PLTCHAINCOIN Amount | Will act as delegate
 var Raccount = node.randomAccount();
 
 var test = 0;
@@ -110,7 +110,7 @@ describe('Delegates', function() {
     describe('upVoting and downVoting',function() {
 
         before(function(done){
-            // Send random EBOOKCOIN amount from foundation account to Random account
+            // Send random PLTCHAINCOIN Amount from foundation account to Random account
             node.api.put('/transactions')
                 .set('Accept', 'application/json')
                 .send({

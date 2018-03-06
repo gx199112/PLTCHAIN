@@ -14,7 +14,7 @@ var _ = require('lodash'),
     async = require('async'),
     request = require('request');
 
-var normalizer = 100000000; // Use this to convert EBOOKCOIN amount to normal value
+var normalizer = 100000000; // Use this to convert PLTCHAINCOIN Amount to normal value
 var blockTime = 10000; // Block time in miliseconds
 var blockTimePlus = 12000; // Block time + 2 seconds in miliseconds
 var version = "0.1.0" // Node version
@@ -100,7 +100,7 @@ var Faccount = {
   'balance': 0
 };
 
-// Random EBOOKCOIN Amount
+// Random PLTCHAINCOIN Amount
 var EBOOKCOIN = Math.floor(Math.random() * (100000 * 100000000)) + 1; // Remove 1 x 0 for reduced fees (delegate + Tx)
 
 // Used to create random delegates names
@@ -127,7 +127,7 @@ function randomProperty(obj, needKey){
   }
 };
 
-// Randomizes EBOOKCOIN amount
+// Randomizes PLTCHAINCOIN Amount
 function randomizeEbookcoin(){
   return Math.floor(Math.random() * (10000 * 100000000)) + (1000 * 100000000);
 }
