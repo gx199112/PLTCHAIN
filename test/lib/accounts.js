@@ -117,7 +117,7 @@ describe('Account', function() {
                 console.log(JSON.stringify(res.body));
                 node.expect(res.body).to.have.property("success").to.be.false;
                 node.expect(res.body).to.have.property("error");
-                // expect(res.body.error).to.contain("Provide valid Ebookcoin address");
+                // expect(res.body.error).to.contain("Provide valid PLTChainCoin Address");
                 done();
             });
     });
@@ -162,7 +162,7 @@ describe('Account', function() {
                 console.log(JSON.stringify(res.body));
                 node.expect(res.body).to.have.property("success").to.be.false;
                 node.expect(res.body).to.have.property("error");
-                // expect(res.body.error).to.contain("Provide valid Ebookcoin address");
+                // expect(res.body.error).to.contain("Provide valid PLTChainCoin Address");
                 done();
             });
     });
@@ -177,7 +177,7 @@ describe('Account', function() {
                 console.log(JSON.stringify(res.body));
                 node.expect(res.body).to.have.property("success").to.be.false;
                 node.expect(res.body).to.have.property("error");
-                // expect(res.body.error).to.contain("Provide valid Ebookcoin address");
+                // expect(res.body.error).to.contain("Provide valid PLTChainCoin Address");
                 done();
             });
     });
@@ -294,7 +294,7 @@ describe('Account', function() {
                 console.log(JSON.stringify(res.body));
                 node.expect(res.body).to.have.property("success").to.be.false;
                 node.expect(res.body).to.have.property("error");
-                // expect(res.body.error).to.contain("Provide valid Ebookcoin address");
+                // expect(res.body.error).to.contain("Provide valid PLTChainCoin Address");
                 done();
             });
     });

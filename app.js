@@ -334,12 +334,12 @@ d.run(function () {
 			});
 
 			scope.network.server.listen(scope.config.port, scope.config.address, function (err) {
-				scope.logger.log("Ebookcoin started: " + scope.config.address + ":" + scope.config.port);
+				scope.logger.log("PLTCHAIN started: " + scope.config.address + ":" + scope.config.port);
 
 				if (!err) {
 					if (scope.config.ssl.enabled) {
 						scope.network.https.listen(scope.config.ssl.options.port, scope.config.ssl.options.address, function (err) {
-							scope.logger.log("Ebookcoin https started: " + scope.config.ssl.options.address + ":" + scope.config.ssl.options.port);
+							scope.logger.log("PLTCHAIN https started: " + scope.config.ssl.options.address + ":" + scope.config.ssl.options.port);
 
 							cb(err, scope.network);
 						});

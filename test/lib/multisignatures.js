@@ -748,7 +748,7 @@ describe('Multisignatures', function() {
         });
 
         test += 1;
-        it(test + '. Try to send EBOOKCOIN FROM multisignature account (confirmations still pending). We expect success',function(done) {
+        it(test + '. Try to SEND COIN FROM multisignature account (confirmations still pending). We expect success',function(done) {
             node.onNewBlock(function (err) {
                 sendEbookcoinfromMultisigAccount(100000000, node.Faccount.address);
                 done();

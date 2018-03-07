@@ -385,7 +385,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We send EBOOKCOIN from Account 1 (' + Account1.password + ') to Account 2 (' + Account2.address + ') - valid data. We expect success',function(done){
+            it(test + '. We SEND COIN from Account 1 (' + Account1.password + ') to Account 2 (' + Account2.address + ') - valid data. We expect success',function(done){
                 node.onNewBlock(function(err) {
           node.expect(err).to.be.not.ok;
                     amountToSend = 100000000;
@@ -623,7 +623,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We try to send EBOOKCOIN WITHOUT PASSWORD. We expect error',function(done){
+            it(test + '. We try to SEND COIN WITHOUT PASSWORD. We expect error',function(done){
                 amountToSend = 100000000;
                 node.api.put('/transactions')
                     .set('Accept', 'application/json')
@@ -642,7 +642,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We try to send EBOOKCOIN WITHOUT RECIPIENT. We expect error',function(done){
+            it(test + '. We try to SEND COIN WITHOUT RECIPIENT. We expect error',function(done){
                 amountToSend = 100000000;
                 node.api.put('/transactions')
                     .set('Accept', 'application/json')
@@ -844,7 +844,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We try to send EBOOKCOIN WITHOUT SECOND PASSWORD. We expect error',function(done){
+            it(test + '. We try to SEND COIN WITHOUT SECOND PASSWORD. We expect error',function(done){
                 amountToSend = 100000000;
                 node.onNewBlock(function(err){
           node.expect(err).to.be.not.ok;
@@ -868,7 +868,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We try to send EBOOKCOIN WITH SECOND PASSWORD but NO SECRET. We expect error',function(done){
+            it(test + '. We try to SEND COIN WITH SECOND PASSWORD but NO SECRET. We expect error',function(done){
                 amountToSend = 100000000;
                 this.timeout(5000);
                 setTimeout(function(){
@@ -1086,7 +1086,7 @@ describe('Transactions', function() {
             });
 
             test += 1;
-            it(test + '. We try to SEND EBOOKCOIN to USERNAME. We expect success',function(done){
+            it(test + '. We try to SEND COIN to USERNAME. We expect success',function(done){
                 node.onNewBlock(function(){
                     amountToSend = 100000000;
                     node.api.put('/transactions')
